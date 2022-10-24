@@ -48,6 +48,8 @@ def main():
 
     print(table)
     
+    print([item['field_id'] for item in field_list])
+    
     print(f"二级领域总数：{len(field_list)}")
     
 

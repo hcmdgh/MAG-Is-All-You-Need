@@ -17,27 +17,15 @@ def main():
             paper_field_map[paper_id].add(field_id)
             field_paper_map[field_id].add(paper_id)
 
-    with open('./output/paper_field_mapping.json', 'w') as fp:
+    with open('./output/paper_field_mapping.tsv', 'w') as fp:
         for paper_id, field_ids in tqdm(paper_field_map.items()):
-            json_str = json.dumps(
-                dict(
-                    paper_id = paper_id, 
-                    field_ids = list(field_ids), 
-                )
-            ).strip() 
+            field_ids_str = ','.join(str(x) for x in field_ids)
+            print(f"{paper_id}\t{field_ids_str}", file=fp)
             
-            print(json_str, file=fp)
-            
-    with open('./output/field_paper_mapping.json', 'w') as fp:
+    with open('./output/field_paper_mapping.tsv', 'w') as fp:
         for field_id, paper_ids in tqdm(field_paper_map.items()):
-            json_str = json.dumps(
-                dict(
-                    field_id = field_id, 
-                    paper_ids = list(paper_ids), 
-                )
-            ).strip() 
-            
-            print(json_str, file=fp)
+            paper_ids_str = ','.join(str(x) for x in paper_ids)
+            print(f"{field_id}\t{paper_ids_str}", file=fp)
             
             
 if __name__ == '__main__':
