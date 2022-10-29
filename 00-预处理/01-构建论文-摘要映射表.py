@@ -2,11 +2,11 @@ from tqdm import tqdm
 import json 
 
 PATH_LIST = [
-    '/home/Dataset/MAG/mag_20211108/nlp/PaperAbstractsInvertedIndex.txt.1',
-    '/home/Dataset/MAG/mag_20211108/nlp/PaperAbstractsInvertedIndex.txt.2',
-    '/home/Dataset/MAG/mag_20211108/nlp/PaperAbstractsInvertedIndex.txt.3',
-    '/home/Dataset/MAG/mag_20211108/nlp/PaperAbstractsInvertedIndex.txt.4',
-    '/home/Dataset/MAG/mag_20211108/nlp/PaperAbstractsInvertedIndex.txt.5',
+    '/storage/GengHao/MAG/mag_20211108/nlp/PaperAbstractsInvertedIndex.txt.1',
+    '/storage/GengHao/MAG/mag_20211108/nlp/PaperAbstractsInvertedIndex.txt.2',
+    '/storage/GengHao/MAG/mag_20211108/nlp/PaperAbstractsInvertedIndex.txt.3',
+    '/storage/GengHao/MAG/mag_20211108/nlp/PaperAbstractsInvertedIndex.txt.4',
+    '/storage/GengHao/MAG/mag_20211108/nlp/PaperAbstractsInvertedIndex.txt.5',
 ]
 
 
